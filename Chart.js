@@ -981,6 +981,8 @@
 		generateLegend : function(){
 			if (this.data != null){
 				return helpers.template(this.options.legendTemplate, {datasets: this.data.datasets});
+			} else {
+				return helpers.template(this.options.legendTemplate);
 			}
 		},
 		destroy : function(){

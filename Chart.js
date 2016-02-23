@@ -979,7 +979,7 @@
 			return this;
 		},
 		generateLegend : function(){
-			if (this.data.datasets != null){
+			if (this.data != null){
 				return helpers.template(this.options.legendTemplate, {datasets: this.data.datasets});
 			}
 		},
